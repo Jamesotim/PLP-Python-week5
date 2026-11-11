@@ -4,13 +4,13 @@ import string
 
 def make_password(length=8):
     characters = string.ascii_letters + string.digits
-    password = 4""
+    password = ""
     for i in range(length):
         password += random.choice(characters)
     return password
 
 
-p1 = make_password(4)
+p1 = make_password()
 p2 = make_password(12)
 
 print("Password:", p1)
